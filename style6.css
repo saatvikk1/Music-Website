@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style: none;
+    color: white;
+}
+.logo h1{
+    color: white;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+nav{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    justify-content: space-between;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.hero-section{
+    background-image: url(/Project6/hero_image.png);
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+    background-size: cover;
+}
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.music-section{
+    padding-top: 50px;
+    background-color: #1b0058;
+}
+.music-section .container{
+    color: white;
+    display: flex;
+    flex-direction: column ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.ipad-iphone-img{
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+.primary-btn{
+    color: white;
+    background-color: #dc0000;
+    padding: 10px;
+    border-style: none;
+    border-radius: 2px;
+    font-size: 15px;
+    border: 2px solid transparent;
+    transition: 0.5 ease-in-out;
+}
+.primary-btn:hover{
+    background-color: #c75959;
+    border: 2px solid gray;
+    transition: 0.2s ease-in-out;
+    transform:scale(1.1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.movie-section{
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.primary-btn2{
+    color: white;
+    background-color: #37009e;
+    padding: 10px;
+    border-style: none;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.video-section{
+    background-image: url(/Project6/video.png);
+    height: 100vh;
+    color: white;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.gift-section{
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    gap: 50px;
+}
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+footer{
+    background-color: var(--purple600);
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.list-items{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.list-items ul{
+    list-style: none;
+}
+.list-items h3{
+    color: white;
+    border-bottom: 2px solid white;
+    font-size: 20px;
+}
+.footer2{
+    background-color: #270082;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px;
+}
+@media (max-width:1024px){
+    header{
+        width: 100%;
+    }
+
+    .music-section img{
+        width: 60%;
+
+    }
+    .movie-section img{
+        width: 60%;
+    }
+    .movie-section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
